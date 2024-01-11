@@ -37,4 +37,10 @@ Public Class Form1
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         PictureBox1.Load(OpenFileDialog1.FileName)
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim inFile As New StreamReader("data.txt")
+        Field1.Text = inFile.ReadToEnd
+        inFile.Close()
+    End Sub
 End Class
