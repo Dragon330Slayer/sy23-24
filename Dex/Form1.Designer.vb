@@ -38,6 +38,10 @@ Partial Class Form1
         Me.Field5 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Firstbutton = New System.Windows.Forms.Button()
+        Me.Prevbutton = New System.Windows.Forms.Button()
+        Me.Nextbutton = New System.Windows.Forms.Button()
+        Me.Lastbutton = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -74,7 +78,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(386, 279)
+        Me.Label1.Location = New System.Drawing.Point(377, 146)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 20)
         Me.Label1.TabIndex = 2
@@ -83,7 +87,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(386, 312)
+        Me.Label2.Location = New System.Drawing.Point(377, 179)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 20)
         Me.Label2.TabIndex = 3
@@ -92,7 +96,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(386, 345)
+        Me.Label3.Location = New System.Drawing.Point(377, 212)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(90, 20)
         Me.Label3.TabIndex = 4
@@ -101,7 +105,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(386, 378)
+        Me.Label4.Location = New System.Drawing.Point(377, 245)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(39, 20)
         Me.Label4.TabIndex = 5
@@ -110,7 +114,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(386, 411)
+        Me.Label5.Location = New System.Drawing.Point(377, 278)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(80, 20)
         Me.Label5.TabIndex = 6
@@ -119,35 +123,35 @@ Partial Class Form1
         'Field1
         '
         Me.Field1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Field1.Location = New System.Drawing.Point(482, 279)
+        Me.Field1.Location = New System.Drawing.Point(473, 143)
         Me.Field1.Name = "Field1"
         Me.Field1.Size = New System.Drawing.Size(125, 27)
         Me.Field1.TabIndex = 7
         '
         'Field2
         '
-        Me.Field2.Location = New System.Drawing.Point(482, 312)
+        Me.Field2.Location = New System.Drawing.Point(473, 176)
         Me.Field2.Name = "Field2"
         Me.Field2.Size = New System.Drawing.Size(125, 27)
         Me.Field2.TabIndex = 8
         '
         'Field3
         '
-        Me.Field3.Location = New System.Drawing.Point(482, 345)
+        Me.Field3.Location = New System.Drawing.Point(473, 209)
         Me.Field3.Name = "Field3"
         Me.Field3.Size = New System.Drawing.Size(125, 27)
         Me.Field3.TabIndex = 9
         '
         'Field4
         '
-        Me.Field4.Location = New System.Drawing.Point(482, 378)
+        Me.Field4.Location = New System.Drawing.Point(473, 242)
         Me.Field4.Name = "Field4"
         Me.Field4.Size = New System.Drawing.Size(125, 27)
         Me.Field4.TabIndex = 10
         '
         'Field5
         '
-        Me.Field5.Location = New System.Drawing.Point(482, 411)
+        Me.Field5.Location = New System.Drawing.Point(473, 275)
         Me.Field5.Name = "Field5"
         Me.Field5.Size = New System.Drawing.Size(125, 27)
         Me.Field5.TabIndex = 11
@@ -155,9 +159,9 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 181)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 146)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(368, 257)
+        Me.PictureBox1.Size = New System.Drawing.Size(359, 257)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 12
         Me.PictureBox1.TabStop = False
@@ -166,11 +170,51 @@ Partial Class Form1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'Firstbutton
+        '
+        Me.Firstbutton.Location = New System.Drawing.Point(12, 409)
+        Me.Firstbutton.Name = "Firstbutton"
+        Me.Firstbutton.Size = New System.Drawing.Size(94, 29)
+        Me.Firstbutton.TabIndex = 13
+        Me.Firstbutton.Text = "First"
+        Me.Firstbutton.UseVisualStyleBackColor = True
+        '
+        'Prevbutton
+        '
+        Me.Prevbutton.Location = New System.Drawing.Point(105, 409)
+        Me.Prevbutton.Name = "Prevbutton"
+        Me.Prevbutton.Size = New System.Drawing.Size(94, 29)
+        Me.Prevbutton.TabIndex = 14
+        Me.Prevbutton.Text = "Previous"
+        Me.Prevbutton.UseVisualStyleBackColor = True
+        '
+        'Nextbutton
+        '
+        Me.Nextbutton.Location = New System.Drawing.Point(196, 409)
+        Me.Nextbutton.Name = "Nextbutton"
+        Me.Nextbutton.Size = New System.Drawing.Size(94, 29)
+        Me.Nextbutton.TabIndex = 15
+        Me.Nextbutton.Text = "Next"
+        Me.Nextbutton.UseVisualStyleBackColor = True
+        '
+        'Lastbutton
+        '
+        Me.Lastbutton.Location = New System.Drawing.Point(277, 409)
+        Me.Lastbutton.Name = "Lastbutton"
+        Me.Lastbutton.Size = New System.Drawing.Size(94, 29)
+        Me.Lastbutton.TabIndex = 16
+        Me.Lastbutton.Text = "Last"
+        Me.Lastbutton.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Lastbutton)
+        Me.Controls.Add(Me.Nextbutton)
+        Me.Controls.Add(Me.Prevbutton)
+        Me.Controls.Add(Me.Firstbutton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Field5)
         Me.Controls.Add(Me.Field4)
@@ -209,4 +253,8 @@ Partial Class Form1
     Friend WithEvents Field5 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Firstbutton As Button
+    Friend WithEvents Prevbutton As Button
+    Friend WithEvents Nextbutton As Button
+    Friend WithEvents Lastbutton As Button
 End Class
