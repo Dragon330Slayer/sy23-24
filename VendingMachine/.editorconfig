@@ -1,0 +1,4 @@
+﻿[*.vb]
+
+# BC40003: Member shadows an overloadable member declared in the base type
+dotnet_diagnostic.BC40003.severity = none
