@@ -22,27 +22,25 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.SuspendLayout()
-        '
-        'CheckedListBox1
-        '
-        Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Items.AddRange(New Object() {"wheels", "engine tune", "exhaust"})
-        Me.CheckedListBox1.Location = New System.Drawing.Point(12, 12)
-        Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(164, 89)
-        Me.CheckedListBox1.TabIndex = 0
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"wheels", "engine tunes", "exhaust"})
-        Me.ComboBox1.Location = New System.Drawing.Point(183, 12)
+        Me.ComboBox1.Location = New System.Drawing.Point(14, 108)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(241, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
         Me.ComboBox1.TabIndex = 1
+        '
+        'CheckedListBox1
+        '
+        Me.CheckedListBox1.FormattingEnabled = True
+        Me.CheckedListBox1.Location = New System.Drawing.Point(12, 12)
+        Me.CheckedListBox1.Name = "CheckedListBox1"
+        Me.CheckedListBox1.Size = New System.Drawing.Size(120, 89)
+        Me.CheckedListBox1.TabIndex = 0
         '
         'Form1
         '
@@ -57,6 +55,6 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents CheckedListBox1 As CheckedListBox
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CheckedListBox1 As CheckedListBox
 End Class
