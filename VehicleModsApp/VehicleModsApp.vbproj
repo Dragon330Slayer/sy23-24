@@ -119,5 +119,14 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rim1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rim2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rim3.jfif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
