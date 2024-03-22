@@ -49,6 +49,8 @@ Partial Class Form1
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -300,11 +302,30 @@ Partial Class Form1
         Me.ComboBox9.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox9.TabIndex = 25
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(855, 31)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.TabIndex = 31
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(852, 12)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(38, 16)
+        Me.Label16.TabIndex = 32
+        Me.Label16.Text = "Total"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1112, 554)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label15)
@@ -368,4 +389,6 @@ Partial Class Form1
     Friend WithEvents ComboBox7 As ComboBox
     Friend WithEvents ComboBox8 As ComboBox
     Friend WithEvents ComboBox9 As ComboBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label16 As Label
 End Class
