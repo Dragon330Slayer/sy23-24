@@ -50,6 +50,10 @@ Partial Class Form1
         Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         Me.ComboBox9 = New System.Windows.Forms.ComboBox()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TotalTextBox = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,7 +62,7 @@ Partial Class Form1
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.VehicleModsApp.My.Resources.Resources.rim3
-        Me.PictureBox3.Location = New System.Drawing.Point(528, 12)
+        Me.PictureBox3.Location = New System.Drawing.Point(517, 40)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(192, 194)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -68,7 +72,7 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.VehicleModsApp.My.Resources.Resources.rim2
-        Me.PictureBox2.Location = New System.Drawing.Point(273, 12)
+        Me.PictureBox2.Location = New System.Drawing.Point(262, 40)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(194, 194)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -78,7 +82,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.VehicleModsApp.My.Resources.Resources.rim1
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(11, 40)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(197, 194)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -88,7 +92,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(42, 209)
+        Me.Label1.Location = New System.Drawing.Point(41, 237)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(127, 16)
         Me.Label1.TabIndex = 5
@@ -97,7 +101,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(298, 209)
+        Me.Label2.Location = New System.Drawing.Point(287, 237)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(139, 16)
         Me.Label2.TabIndex = 6
@@ -106,7 +110,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(557, 209)
+        Me.Label3.Location = New System.Drawing.Point(546, 237)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(117, 16)
         Me.Label3.TabIndex = 7
@@ -115,7 +119,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(42, 236)
+        Me.Label4.Location = New System.Drawing.Point(41, 264)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(128, 16)
         Me.Label4.TabIndex = 8
@@ -124,7 +128,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(298, 236)
+        Me.Label5.Location = New System.Drawing.Point(287, 264)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(128, 16)
         Me.Label5.TabIndex = 9
@@ -133,7 +137,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(557, 236)
+        Me.Label6.Location = New System.Drawing.Point(546, 264)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(138, 16)
         Me.Label6.TabIndex = 10
@@ -143,7 +147,7 @@ Partial Class Form1
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"5x114.3", "5x112"})
-        Me.ComboBox1.Location = New System.Drawing.Point(8, 280)
+        Me.ComboBox1.Location = New System.Drawing.Point(7, 308)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox1.TabIndex = 11
@@ -152,7 +156,7 @@ Partial Class Form1
         '
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"17x9", "18x9", "18x10", "18x10.5", "19x9", "19x10", "19x10.5"})
-        Me.ComboBox4.Location = New System.Drawing.Point(8, 346)
+        Me.ComboBox4.Location = New System.Drawing.Point(7, 374)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox4.TabIndex = 14
@@ -161,7 +165,7 @@ Partial Class Form1
         '
         Me.ComboBox5.FormattingEnabled = True
         Me.ComboBox5.Items.AddRange(New Object() {"35 mm"})
-        Me.ComboBox5.Location = New System.Drawing.Point(8, 409)
+        Me.ComboBox5.Location = New System.Drawing.Point(7, 437)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox5.TabIndex = 15
@@ -169,7 +173,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(9, 258)
+        Me.Label7.Location = New System.Drawing.Point(8, 286)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(75, 16)
         Me.Label7.TabIndex = 16
@@ -178,7 +182,7 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(8, 324)
+        Me.Label8.Location = New System.Drawing.Point(7, 352)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(75, 16)
         Me.Label8.TabIndex = 17
@@ -187,7 +191,7 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(9, 390)
+        Me.Label9.Location = New System.Drawing.Point(8, 418)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(41, 16)
         Me.Label9.TabIndex = 18
@@ -196,7 +200,7 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(270, 390)
+        Me.Label10.Location = New System.Drawing.Point(259, 418)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(41, 16)
         Me.Label10.TabIndex = 24
@@ -205,7 +209,7 @@ Partial Class Form1
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(269, 324)
+        Me.Label11.Location = New System.Drawing.Point(258, 352)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(75, 16)
         Me.Label11.TabIndex = 23
@@ -214,7 +218,7 @@ Partial Class Form1
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(270, 258)
+        Me.Label12.Location = New System.Drawing.Point(259, 286)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(75, 16)
         Me.Label12.TabIndex = 22
@@ -224,7 +228,7 @@ Partial Class Form1
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"44 mm"})
-        Me.ComboBox2.Location = New System.Drawing.Point(269, 409)
+        Me.ComboBox2.Location = New System.Drawing.Point(258, 437)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox2.TabIndex = 21
@@ -233,7 +237,7 @@ Partial Class Form1
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"18x8", "18x8.5"})
-        Me.ComboBox3.Location = New System.Drawing.Point(269, 346)
+        Me.ComboBox3.Location = New System.Drawing.Point(258, 374)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox3.TabIndex = 20
@@ -242,7 +246,7 @@ Partial Class Form1
         '
         Me.ComboBox6.FormattingEnabled = True
         Me.ComboBox6.Items.AddRange(New Object() {"5x114.3"})
-        Me.ComboBox6.Location = New System.Drawing.Point(269, 280)
+        Me.ComboBox6.Location = New System.Drawing.Point(258, 308)
         Me.ComboBox6.Name = "ComboBox6"
         Me.ComboBox6.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox6.TabIndex = 19
@@ -250,7 +254,7 @@ Partial Class Form1
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(525, 390)
+        Me.Label13.Location = New System.Drawing.Point(514, 418)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(41, 16)
         Me.Label13.TabIndex = 30
@@ -259,7 +263,7 @@ Partial Class Form1
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(524, 324)
+        Me.Label14.Location = New System.Drawing.Point(513, 352)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(75, 16)
         Me.Label14.TabIndex = 29
@@ -268,7 +272,7 @@ Partial Class Form1
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(525, 258)
+        Me.Label15.Location = New System.Drawing.Point(514, 286)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(75, 16)
         Me.Label15.TabIndex = 28
@@ -278,7 +282,7 @@ Partial Class Form1
         '
         Me.ComboBox7.FormattingEnabled = True
         Me.ComboBox7.Items.AddRange(New Object() {"40 mm"})
-        Me.ComboBox7.Location = New System.Drawing.Point(524, 409)
+        Me.ComboBox7.Location = New System.Drawing.Point(513, 437)
         Me.ComboBox7.Name = "ComboBox7"
         Me.ComboBox7.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox7.TabIndex = 27
@@ -287,7 +291,7 @@ Partial Class Form1
         '
         Me.ComboBox8.FormattingEnabled = True
         Me.ComboBox8.Items.AddRange(New Object() {"20x9"})
-        Me.ComboBox8.Location = New System.Drawing.Point(524, 346)
+        Me.ComboBox8.Location = New System.Drawing.Point(513, 374)
         Me.ComboBox8.Name = "ComboBox8"
         Me.ComboBox8.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox8.TabIndex = 26
@@ -296,7 +300,7 @@ Partial Class Form1
         '
         Me.ComboBox9.FormattingEnabled = True
         Me.ComboBox9.Items.AddRange(New Object() {"5x112"})
-        Me.ComboBox9.Location = New System.Drawing.Point(524, 280)
+        Me.ComboBox9.Location = New System.Drawing.Point(513, 308)
         Me.ComboBox9.Name = "ComboBox9"
         Me.ComboBox9.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox9.TabIndex = 25
@@ -304,17 +308,52 @@ Partial Class Form1
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(774, 12)
+        Me.Label16.Location = New System.Drawing.Point(785, 40)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(38, 16)
+        Me.Label16.Size = New System.Drawing.Size(47, 16)
         Me.Label16.TabIndex = 32
-        Me.Label16.Text = "Total"
+        Me.Label16.Text = "Total : "
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(192, 22)
+        Me.TextBox1.TabIndex = 33
+        Me.TextBox1.Text = "Start Price: $524"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(262, 12)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(193, 22)
+        Me.TextBox2.TabIndex = 34
+        Me.TextBox2.Text = "Start Price: $810"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(517, 12)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(192, 22)
+        Me.TextBox3.TabIndex = 35
+        Me.TextBox3.Text = "Start Price: $1182"
+        '
+        'TotalTextBox
+        '
+        Me.TotalTextBox.Location = New System.Drawing.Point(838, 40)
+        Me.TotalTextBox.Name = "TotalTextBox"
+        Me.TotalTextBox.Size = New System.Drawing.Size(100, 22)
+        Me.TotalTextBox.TabIndex = 36
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1112, 554)
+        Me.ClientSize = New System.Drawing.Size(1074, 570)
+        Me.Controls.Add(Me.TotalTextBox)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
@@ -380,4 +419,8 @@ Partial Class Form1
     Friend WithEvents ComboBox8 As ComboBox
     Friend WithEvents ComboBox9 As ComboBox
     Friend WithEvents Label16 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TotalTextBox As TextBox
 End Class

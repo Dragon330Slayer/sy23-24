@@ -1,6 +1,5 @@
 ﻿Imports System.Windows
 Public Class Form1
-    Dim _total As Decimal
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
 
     End Sub
