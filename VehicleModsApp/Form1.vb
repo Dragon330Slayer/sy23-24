@@ -1,10 +1,14 @@
 ﻿Imports System.Windows
 Public Class Form1
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        TotalTextBox.Text = 524.ToString("c2")
     End Sub
 
-    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
-        Label16.Text = Label16.ToString("c2")
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        TotalTextBox.Text = 810.ToString("c2")
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        TotalTextBox.Text = 1182.ToString("c2")
     End Sub
 End Class
