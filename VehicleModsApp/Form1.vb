@@ -54,4 +54,16 @@ Public Class Form1
         Button17.Visible = True
         Button16.Visible = True
     End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        totalLabel.Text = total + 16.33
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        Button20.Visible = True
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        Button21.Visible = True
+    End Sub
 End Class

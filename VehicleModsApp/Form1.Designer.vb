@@ -53,6 +53,10 @@ Partial Class Form1
         Me.Button15 = New System.Windows.Forms.Button()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Button19 = New System.Windows.Forms.Button()
+        Me.Button20 = New System.Windows.Forms.Button()
+        Me.Button21 = New System.Windows.Forms.Button()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -180,7 +184,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 666)
+        Me.Button1.Location = New System.Drawing.Point(11, 542)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 37
@@ -189,7 +193,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(261, 666)
+        Me.Button2.Location = New System.Drawing.Point(262, 542)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 38
@@ -198,7 +202,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(516, 666)
+        Me.Button3.Location = New System.Drawing.Point(516, 542)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 39
@@ -351,11 +355,53 @@ Partial Class Form1
         Me.Button17.UseVisualStyleBackColor = True
         Me.Button17.Visible = False
         '
+        'Button18
+        '
+        Me.Button18.Location = New System.Drawing.Point(517, 294)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(86, 23)
+        Me.Button18.TabIndex = 55
+        Me.Button18.Text = "Bolt Pattern"
+        Me.Button18.UseVisualStyleBackColor = True
+        '
+        'Button19
+        '
+        Me.Button19.Location = New System.Drawing.Point(516, 383)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(87, 23)
+        Me.Button19.TabIndex = 56
+        Me.Button19.Text = "Wheel Size"
+        Me.Button19.UseVisualStyleBackColor = True
+        '
+        'Button20
+        '
+        Me.Button20.Location = New System.Drawing.Point(517, 323)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(75, 23)
+        Me.Button20.TabIndex = 57
+        Me.Button20.Text = "5x112"
+        Me.Button20.UseVisualStyleBackColor = True
+        Me.Button20.Visible = False
+        '
+        'Button21
+        '
+        Me.Button21.Location = New System.Drawing.Point(516, 413)
+        Me.Button21.Name = "Button21"
+        Me.Button21.Size = New System.Drawing.Size(75, 23)
+        Me.Button21.TabIndex = 58
+        Me.Button21.Text = "20x9"
+        Me.Button21.UseVisualStyleBackColor = True
+        Me.Button21.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1074, 701)
+        Me.ClientSize = New System.Drawing.Size(1074, 597)
+        Me.Controls.Add(Me.Button21)
+        Me.Controls.Add(Me.Button20)
+        Me.Controls.Add(Me.Button19)
+        Me.Controls.Add(Me.Button18)
         Me.Controls.Add(Me.Button16)
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Button14)
@@ -427,4 +473,8 @@ Partial Class Form1
     Friend WithEvents Button15 As Button
     Friend WithEvents Button16 As Button
     Friend WithEvents Button17 As Button
+    Friend WithEvents Button18 As Button
+    Friend WithEvents Button19 As Button
+    Friend WithEvents Button20 As Button
+    Friend WithEvents Button21 As Button
 End Class
